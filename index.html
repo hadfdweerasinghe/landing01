@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+#my-div {
+    position: fixed; 
+    width: 310px; /* Set your desired with */
+    z-index: 2; /* Make sure its above other items. */
+    top: 50%;
+    left: 50%;
+    margin-top: -10%; /* Changes with height. */
+    margin-left: -10%; /* Your width divided by 2. */
+ 
+    /* You will not need the below, its only
+       for styling   purposes.*/
+    padding: 10px;
+    border: 2px solid #e1edfb;
+    background-color: #093358;
+    border-radius: 7px;
+    text-align: center;
+}
+.warningText {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  padding-top: 5px;
+  z-index: 500;
+  font-size: 15px;
+color: white;
+}
+img {
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+</style>
+<title>Start Download</title>
+<script>
+var element = document.getElementById('img1');
+element.style.opacity = "0.5";
+element.style.filter  = 'alpha(opacity=50)';
+</script>
+</head>
+<body bgcolor="#0a355b"> 
+<script type="text/javascript">
+
+(function () {
+    var timeLeft = 3,
+        cinterval;
+
+    var timeDec = function (){
+        timeLeft--;
+        document.getElementById('countdown').innerHTML = "Please wait " + timeLeft + " seconds";
+        if(timeLeft === 0){
+            clearInterval(cinterval);
+            document.getElementById('countdown').innerHTML = "Your Download is Ready!";
+            var element = document.getElementById('img1');
+            element.style.opacity = "0.95";
+            element.style.filter  = 'alpha(opacity=95)';
+         }
+    };
+
+    cinterval = setInterval(timeDec, 1000);
+})();
+
+</script>
+<center><br/><br/><br/>
+<div id="my-div">
+<div class="warningText">
+<p><strong><span id="countdown">Please wait 3 seconds</span></strong><br><br><a href="http://1drv.ms/1SEyeBC"><img id="img1" src="downloadadfly.png"/></a>
+</div></div>
+</center>
+</body>
+</html>
