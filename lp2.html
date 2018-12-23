@@ -1,0 +1,248 @@
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <base > </base>
+  <script type="text/javascript">
+  window.entity_params = window.entity_params || [];
+  window.entity_params['auto_download'] = '1' || undefined;
+  window.entity_params['auto_download_time'] = '2' || undefined;
+  window.entity_params['download_popup'] = '0' || undefined;
+  window.entity_params['lp_exit_confirmation'] = 'no' || undefined;
+  window.entity_params['lp_slug'] = '' || undefined;
+  window.entity_params['track_page_view'] = 'clp_adownpro' || undefined;
+</script>  <script type="text/javascript">
+  // <![CDATA[
+  window.i18n = {"Your download will start in":"Your download will start in","Please Wait...":"Please Wait...","Seconds":"Seconds","Skip Ad":"Skip Ad"};
+  // ]]>
+</script>  <link rel="icon" href="http://images/nlp/n/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../custom_templates/adownpro/styles.css">
+<title>Download</title>
+<link rel="icon" href="http://fileandmore.com/custom_templates/adownpro/images/favicon.ico" type="image/x-icon"></head>
+
+<body>
+  <script type="text/javascript">window.software_platform = 'WIN';</script>
+  <script type="text/javascript" src="../js/osNotification.js"></script>
+  <script type="text/javascript">var osNotification = osNotification();osNotification.init();</script>
+
+<div class="downloadLink">
+  <div class="main">
+    <div class="container center container-tall">
+     
+      <div class="load-text">
+        <img src="../custom_templates/adownpro/images/load7.gif" class="loading"><img src="../custom_templates/adownpro/images/done.png" class="done"><span>Please wait. Preparing Download</span>
+      </div>
+      <div class="loader">
+      <div></div>
+</div>
+      <a class="downloadLink btn-download"><span>Download Now</span></a>
+    </div>
+  </div>
+
+  <div class="description">
+    <div class="container">
+      <ul class="nobullet"></ul>
+<a class="downloadLink center">Download Now</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container container-small">
+      <ul>
+<li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Uninstall</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+</div>
+  </div>
+
+<script>
+  $(function(){
+      var load = $('.loader>div'),
+              don = $('.load-text');
+      load.css('display', 'block').animate({'width': 360}, 3000);
+      setTimeout(function(){
+          don.addClass('bron');
+          don.children('.loading').css('display', 'none');
+          don.children('.done').removeClass('done');
+          don.children('span').html('Download ready');
+          
+      }, 3000);
+  });
+</script>
+</div><div style="visibility: hidden" id="softwareName"> File Downloaded20Successfully</div>
+<link rel="stylesheet" href="../css/downloadIndicator.css" type="text/css"/>
+<link rel="stylesheet" href="../css/loadingBarGreen.css" type="text/css"/>
+<link rel="stylesheet" href="../css/generalPopup.css" type="text/css"/>
+<div class="general-popup-overlay"></div>
+<div class="general-popup downloadProcessPopup">
+  <div class="general-popup-body">Your download is being processed</div><br/>
+  <div class="loadingBar"><span></span></div>
+</div>
+<div id="overlay"></div>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Play:400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+<script type="text/javascript">
+  $(function(){
+    $(".arrowChrome").animate({
+      bottom:"10px",
+      opacity:1,
+    },1000,'linear',start);
+
+    function start(){
+      $(".arrowChrome").animate({
+          bottom:"50px",
+        },600,'linear',
+        function(){
+          $(".arrowChrome").animate({
+            bottom:"10px",
+          },500,'linear',start);
+        });
+    }
+  })
+</script>
+<div id="indicationChrome" class="downloadIndicator">
+  <div class="arrowChrome">&nbsp;</div>
+  <div id="downloadMainChrome">
+    <div class="steps">
+      <div class="steps_header">
+        <div class="steps_num">1</div><h1>Click the Link</h1>
+      </div>
+      <div class="step_image step1">
+        <p class="step1_text" id="filename"></p>
+      </div>
+    </div>
+
+    <div class="steps step2_main">
+      <div class="steps_header">
+        <div class="steps_num">2</div><h1>Click <strong>Run</strong></h1>
+      </div>
+      <div class="step_image step2">
+        <p class="step2_text" id="filename2"></p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="steps_header">
+        <div class="steps_num">3</div><h1>Click <strong>Next</strong></h1>
+      </div>
+      <div class="step_image step3">&nbsp;</div>
+    </div>
+  </div>
+</div>
+<div id="indicationIe" class="downloadIndicator">
+  <div class="indicationIeColumn" id="indicationIeLeftColumn">
+    <h2>Step One</h2>
+    <h3>Click "Run" Below</h3>
+  </div>
+  <div class="indicationIeColumn" id="indicationIeRightColumn">
+    <h2>Step Two</h2>
+    <h3>Click "Yes" when it appears</h3>
+  </div>
+</div>
+<div id="indicationFireFox" class="downloadIndicator">
+  <table height="100%" width="100%">
+    <tr>
+      <td valign="middle">
+        <div id="steps-container">
+          <table id="steps">
+            <tr>
+              <td>
+                <div class="screenshot"><img alt="Run installer" src="../images/ff_step1.png"></div>
+                <h2>1. Save the application</h2>
+
+                <p>Click <strong>Save File</strong> when prompted.</p>
+              </td>
+
+              <td class="middle">
+                <div class="screenshot"><img alt="Drag the icon to your Applications folder" src="../images/ff_step2.png">
+                </div>
+                <h2>2. Open the Program installer</h2>
+
+                <p>From your browser's Downloads window, double click the .exe file that just downloaded.</p>
+              </td>
+
+              <td>
+                <div class="screenshot"><img alt="Double-click the icon" src="../images/ff_step3.png"></div>
+                <h2>3. Follow setup instructions</h2>
+
+                <p>Follow the instructions to get the Program set up on your computer and you will be good to go!</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="indicator_mac" class="downloadIndicator">
+  <div class="steps">
+    <div class="steps_header">
+      <div class="steps_num">1</div><h1>Click the downloads folder</h1>
+    </div>
+    <div class="step_image "><img src="../images/indicator_mac/step1.png" /></div>
+  </div>
+
+  <div class="steps">
+    <div class="steps_header">
+      <div class="steps_num">2</div><h1>Click <span class="indicator-filename">InstallGenieo.DMG</span></h1>
+    </div>
+    <div class="step_image "><img src="../images/indicator_mac/step2.png" /></div>
+  </div>
+
+  <div class="steps">
+    <div class="steps_header">
+      <div class="steps_num">3</div><h1>Double-Click on the installer </h1>
+    </div>
+    <div class="step_image "><img src="../images/indicator_mac/step3.png" /></div>
+    <div class="step3_text"><span class="indicator-appname">InstallGenieo.app</span></div>
+  </div>
+</div>
+<div id="indicator_mac_chrome" class="downloadIndicator">
+  <div class="arrowChrome">&nbsp;</div>
+  <div id="downloadMacChrome">
+    <div class="steps">
+      <div class="steps_header">
+        <div class="steps_num">1</div><h1>Click the Link</h1>
+      </div>
+      <div class="step_image step1">
+        <p class="step1_text" id="filename"></p>
+      </div>
+    </div>
+
+    <div class="steps step2_main">
+      <div class="steps_header">
+        <div class="steps_num">2</div><h1>Double click your file</h1>
+      </div>
+      <div class="step_image step2">
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="steps_header">
+        <div class="steps_num">3</div><h1>Click <strong>Next</strong></h1>
+      </div>
+      <div class="step_image step3">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
